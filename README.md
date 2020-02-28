@@ -153,6 +153,11 @@ I/O streams in the Flux KVS.
 Version 1 of the domain specific job specification language
 canonically defined in RFC14.
 
+#### [27/Job Specification Version 2](spec_27.rst)
+
+Version 2 of the domain specific job specification language
+canonically defined in RFC14.
+
 Change Process
 --------------
 
