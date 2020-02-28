@@ -246,11 +246,11 @@ Specific Example
    Request 4 nodes, each with 1 slot
 
 Existing Equivalents
-   +-----------------------------------+-----------------------------------+
-   | Slurm                             | ``salloc -N4``                    |
-   +-----------------------------------+-----------------------------------+
-   | PBS                               | ``qsub -l nodes=4``               |
-   +-----------------------------------+-----------------------------------+
+   +--------+-----------------------+
+   | Slurm  | ``salloc -N4``        |
+   +--------+-----------------------+
+   | PBS    | ``qsub -l nodes=4``   |
+   +--------+-----------------------+
 
 Jobspec YAML
    .. literalinclude:: data/spec_27/use_case_1.1.yaml
@@ -264,11 +264,11 @@ Specific Example
     Request 4 slots, each with 1 node
 
 Existing Equivalents
-    +------------+---------------------+
-    | Slurm      | ``salloc -N4``      |
-    +------------+---------------------+
-    | PBS        | ``qsub -l nodes=4`` |
-    +------------+---------------------+
+    +---------+---------------------+
+    | Slurm   | ``salloc -N4``      |
+    +---------+---------------------+
+    | PBS     | ``qsub -l nodes=4`` |
+    +---------+---------------------+
 
 Jobspec YAML
   .. literalinclude:: data/spec_27/use_case_1.2.yaml
@@ -306,9 +306,9 @@ Specific Example
    default distribution
 
 Existing Equivalents
-   +-----------------------------------+-----------------------------------+
-   | Slurm                             | ``srun -n5 -N4 hostname``         |
-   +-----------------------------------+-----------------------------------+
+   +--------+----------------------------+
+   | Slurm  | ``srun -n5 -N4 hostname``  |
+   +--------+----------------------------+
 
 Jobspec YAML
    .. literalinclude:: data/spec_27/use_case_2.1.yaml
@@ -322,9 +322,9 @@ Specific Example
    for a total of 20 cores
 
 Existing Equivalents
-   +-----------------------------------+-----------------------------------+
-   | Slurm                             | ``srun -n10 -c 2 myapp``          |
-   +-----------------------------------+-----------------------------------+
+   +--------+---------------------------+
+   | Slurm  | ``srun -n10 -c 2 myapp``  |
+   +--------+---------------------------+
 
 Jobspec YAML
    .. literalinclude:: data/spec_27/use_case_2.2.yaml
@@ -349,9 +349,9 @@ Specific Example
    1 core and 1 gpu
 
 Existing Equivalents
-   +-----------------------------------+-------------------------------------------+
-   | Slurm                             | ``srun -n16 -N4 --gpus-per-task=1 myapp`` |
-   +-----------------------------------+-------------------------------------------+
+   +-------+-------------------------------------------+
+   | Slurm | ``srun -n16 -N4 --gpus-per-task=1 myapp`` |
+   +-------+-------------------------------------------+
 
 Jobspec YAML
    .. literalinclude:: data/spec_27/use_case_2.4.yaml
