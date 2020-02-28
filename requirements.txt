@@ -1,0 +1,6 @@
+Sphinx
+sphinxcontrib-spelling
+sphinx-rtd-theme
+recommonmark
+PyYAML
+jsonschema
