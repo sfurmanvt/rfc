@@ -6,6 +6,9 @@ resources:
     with:
       - type: core
         count: 2
+        with:
+          - type: hardware-thread
+            count: 2
 tasks:
   - command: [ "myapp" ]
     slot: default
